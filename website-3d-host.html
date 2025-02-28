@@ -21,11 +21,13 @@
             scene.add(light);
 
             const loader = new GLTFLoader();
-            loader.load('staticTest1.glb', function(gltf) {
-                scene.add(gltf.scene);
-                camera.position.z = 3;
-                animate();
-            });
+
+loader.load('https://yourusername.github.io/your-repo/staticTest1.glb', function(gltf) {
+    scene.add(gltf.scene);
+    camera.position.z = 3;
+    animate();
+});
+
 
             function animate() {
                 requestAnimationFrame(animate);
