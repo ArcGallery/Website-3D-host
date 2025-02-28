@@ -21,7 +21,7 @@
             scene.add(light);
 
             const loader = new GLTFLoader();
-            loader.load('your-model.glb', function(gltf) {
+            loader.load('staticTest1.glb', function(gltf) {
                 scene.add(gltf.scene);
                 camera.position.z = 3;
                 animate();
